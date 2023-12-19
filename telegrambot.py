@@ -43,11 +43,11 @@ def get_environment_variables( variables : str ) -> str :
             )
 
 # telebot 
-token_bot = telebot.TeleBot(get_environment_variables("TOKEN_API"))
+token_bot = telebot.TeleBot(get_environment_variables("6012411835:AAE2vhTZxzrC0gRtTscPcjdzjVzOJUbuxSc"))
 
 class schedule_textmessage_telegramApi:
     def __init__(self):
-        self.bot = telebot.TeleBot(get_environment_variables("TOKEN_API"))
+        self.bot = telebot.TeleBot(get_environment_variables("6012411835:AAE2vhTZxzrC0gRtTscPcjdzjVzOJUbuxSc"))
         self.seconds_context_hadith : int = 59 # 59  seconds | change if you want 
         self.minutes_context_hadith : int = 60 * 30 # change if you want 
         self.hours_context_hadith   : int = 60 * 60 # change if you want 
@@ -60,7 +60,7 @@ class schedule_textmessage_telegramApi:
      :func telebot_python [self] connection to TelegramAPI
     """
     async def telebot_python(self):
-        return await telebot.TeleBot(get_environment_variables("TOKEN_API"))
+        return await telebot.TeleBot(get_environment_variables("6012411835:AAE2vhTZxzrC0gRtTscPcjdzjVzOJUbuxSc"))
 
     def __await__(self):
         return self.hello_world().__await__()
